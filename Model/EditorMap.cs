@@ -83,11 +83,7 @@ namespace WizardBros.Model
                                 existe = true;
                                 break;
                             }
-                            if (typeSelect > 6 && element is Enemy && element.getPosX() == x - 120 && element.getPosY() == i)
-                            {
-                                existe = true;
-                                break;
-                            }
+                 
                             if (element.getPosX() == x && element.getPosY() == i)
                             {
                                 existe = true;
@@ -279,7 +275,7 @@ namespace WizardBros.Model
                 }
                 else
                 {
-                    decalage = (blocks.First().getPosX());
+                    decalage = (-blocks.First().getPosX());
                 }
 
                 foreach (CollisionObject element in blocks)
